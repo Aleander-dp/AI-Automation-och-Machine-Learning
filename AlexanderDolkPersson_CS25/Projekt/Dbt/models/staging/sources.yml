@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: iot_malware
+    database: IOT_MALWARE
+    schema: RAW
+    tables:
+      - name: RAW
