@@ -3,6 +3,7 @@
 
 ### Beskrivning:
 
+Det här projektet är en end‑to‑end data‑ och maskininlärningspipeline för att upptäcka malware i IoT‑nätverkstrafik. Målet är att skapa en/flera modeller som kan upptäcka malware ENDAST från trafikmönster och inte enhets-identifierande information (sånt som en IP-Adress) samtidigt som jag skapat en pipeline för att automatisera processen. 
 
 
 
