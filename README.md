@@ -118,3 +118,10 @@ Slack fungerar som slutdestination för:
 
 Det gör att hela pipeline kan övervakas och bedömas direkt i Slack.
 
+# Resultat
+
+## Random forest modell
+Modellen visa hög precision även om jag tränade den med mindre data, färre träd eller deras djup. Denna höga precision betydde dock inte att modellen var speciellt "bra". Det stämmer att modellen hade hög precision men den hade också ganska många falskt positiva resultat som betyder att modellen flaggade mycket vanlig trafik som "MALICIOUS". Modellen i sig skulle vara effektiv på att fånga trafik innehållande malware men skulle också inkludera mycket vanlig trafik, som skulle kräva en manuell review för att bedöma om trafiken faktiskt är skadlig.
+
+## Isolation forest modell
+Isolation modellen var betydligt sämre på att upptäcka malware trafiken liggande i testdatan. Precisionen ligger under förväntan och modellen var opålitligt i sitt omdöme. Detta var dock att förvänta sig med en unsupervised modell. Just därför skulle denna modell inte passa bra för användning som den är och kräver mer träning för att uppnå en bättre standard.
